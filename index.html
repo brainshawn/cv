@@ -428,7 +428,7 @@
 
     .pub-visual {
       width: 100%;
-      height: 150px;
+      height: 164px;
       border-radius: 10px;
       overflow: hidden;
       background: #ffffff;
@@ -511,6 +511,13 @@
       text-decoration-color: var(--accent);
       text-decoration-thickness: 1.5px;
       text-underline-offset: 3px;
+    }
+
+    .pub-desc {
+      font-size: 0.80rem;
+      line-height: 1.5;
+      color: var(--text-subtle);
+      margin-top: 1px;
     }
 
     .pub-meta {
@@ -744,6 +751,7 @@
                 <a href="https://arxiv.org/abs/2506.07631" target="_blank" rel="noopener">Unblocking Fine-Grained Evaluation of Detailed Captions: An Explaining AutoRater and Critic-and-Revise Pipeline</a>
               </h4>
               <p class="pub-authors">B Gordon, Y Bitton, A Marzoca, Y Onoe, <span class="me">X Wang</span>, D Cohen-Or, I Szpektor</p>
+              <p class="pub-desc">Introduces the DOCCI-Critique benchmark and VNLI-Critique model for sentence-level caption verification, achieving 0.98 human correlation and automated hallucination repair.</p>
               
             <div class="pub-meta">
               
@@ -776,6 +784,7 @@
                 <a href="https://arxiv.org/abs/2502.07617" target="_blank" rel="noopener">Scaling pre-training to one hundred billion data for vision language models</a>
               </h4>
               <p class="pub-authors"><span class="me">X Wang</span>, I Alabdulmohsin, D Salz, Z Li, K Rong, X Zhai</p>
+              <p class="pub-desc">Scales contrastive vision-language pre-training to 100B web image-text pairs, showing major gains in global cultural diversity, long-tail concepts, and low-resource languages.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">CVPR 2026 Findings</span>
@@ -808,6 +817,7 @@
                 <a href="https://arxiv.org/abs/2502.14786" target="_blank" rel="noopener">Siglip 2: Multilingual vision-language encoders with improved semantic understanding, localization, and dense features</a>
               </h4>
               <p class="pub-authors">M Tschannen, A Gritsenko, <span class="me">X Wang</span>, MF Naeem, I Alabdulmohsin, ...</p>
+              <p class="pub-desc">Unifies sigmoid contrastive learning with captioning, self-distillation, and masked prediction into a multilingual recipe that boosts retrieval, localization, and dense features.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">Tech Report</span>
@@ -840,6 +850,7 @@
                 <a href="https://arxiv.org/abs/2412.03555" target="_blank" rel="noopener">Paligemma 2: A family of versatile vlms for transfer</a>
               </h4>
               <p class="pub-authors">A Steiner, AS Pinto, M Tschannen, D Keysers, <span class="me">X Wang</span>, Y Bitton, ...</p>
+              <p class="pub-desc">Pairs SigLIP-So400m with Gemma 2 models (2B to 27B) across multiple resolutions, achieving state-of-the-art transfer on OCR, table/molecule recognition, and long captioning.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">Tech Report</span>
@@ -872,6 +883,7 @@
                 <a href="https://arxiv.org/abs/2407.07726" target="_blank" rel="noopener">Paligemma: A versatile 3b vlm for transfer</a>
               </h4>
               <p class="pub-authors">L Beyer, A Steiner, AS Pinto, A Kolesnikov, <span class="me">X Wang</span>, D Salz, M Neumann, ...</p>
+              <p class="pub-desc">An open 3B vision-language base model combining SigLIP-So400m and Gemma-2B, trained with multi-stage multimodal mixtures for strong transfer across nearly 40 diverse tasks.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">Tech Report</span>
@@ -904,6 +916,7 @@
                 <a href="https://arxiv.org/abs/2405.13777" target="_blank" rel="noopener">No filter: Cultural and socioeconomic diversityin contrastive vision-language models</a>
               </h4>
               <p class="pub-authors">A Pouget, L Beyer, E Bugliarello, <span class="me">X Wang</span>, AP Steiner, X Zhai, ...</p>
+              <p class="pub-desc">Shows that English-only and CLIP-score filtering harms socioeconomic and cultural representation, while unfiltered global pre-training restores equity without losing accuracy.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">NeurIPS 2024</span>
@@ -936,6 +949,7 @@
                 <a href="https://arxiv.org/abs/2403.19596" target="_blank" rel="noopener">LocCa: Visual Pretraining with Location-aware Captioners</a>
               </h4>
               <p class="pub-authors">B Wan, M Tschannen, Y Xian, F Pavetic, I Alabdulmohsin, <span class="me">X Wang</span>, ...</p>
+              <p class="pub-desc">Trains an encoder-decoder vision model to predict bounding boxes and region captions directly from pixels, significantly improving localization while matching holistic pre-training.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">NeurIPS 2024</span>
@@ -968,6 +982,7 @@
                 <a href="https://arxiv.org/abs/2403.04547" target="_blank" rel="noopener">CLIP the Bias: How Useful is Balancing Data in Multimodal Learning?</a>
               </h4>
               <p class="pub-authors">I Alabdulmohsin, <span class="me">X Wang</span>, A Steiner, P Goyal, A D'Amour, X Zhai</p>
+              <p class="pub-desc">Proposes Multi-Modal Moment Matching (M4) to reduce demographic representation and association biases in image-text data while preserving downstream retrieval and classification.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">ICLR 2024</span>
@@ -1000,6 +1015,7 @@
                 <a href="https://arxiv.org/abs/2310.09199" target="_blank" rel="noopener">Pali-3 vision language models: Smaller, faster, stronger</a>
               </h4>
               <p class="pub-authors">X Chen, <span class="me">X Wang</span>, L Beyer, A Kolesnikov, J Wu, P Voigtlaender, B Mustafa, ...</p>
+              <p class="pub-desc">Pairs a 2B contrastively pre-trained SigLIP vision backbone with a 3B language model to build a compact 5B VLM that outperforms models 10x larger on retrieval and text VQA.</p>
               
             <div class="pub-meta">
               
@@ -1032,6 +1048,7 @@
                 <a href="https://arxiv.org/abs/2305.18565" target="_blank" rel="noopener">Pali-x: On scaling up a multilingual vision and language model</a>
               </h4>
               <p class="pub-authors">X Chen, J Djolonga, P Padlewski, B Mustafa, S Changpinyo, J Wu, ...</p>
+              <p class="pub-desc">Scales vision (ViT-22B) and language components across a broad multilingual image and video mixture, setting new state-of-the-art results across 25+ multimodal benchmarks.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">CVPR 2024</span>
@@ -1064,6 +1081,7 @@
                 <a href="https://arxiv.org/abs/2305.16999" target="_blank" rel="noopener">Three Towers: Flexible Contrastive Learning with Pretrained Image Models</a>
               </h4>
               <p class="pub-authors">J Kossen, M Collier, B Mustafa, <span class="me">X Wang</span>, X Zhai, L Beyer, A Steiner, ...</p>
+              <p class="pub-desc">Introduces a third frozen pretrained classifier tower during contrastive learning, letting the vision encoder combine strong pretrained features with end-to-end text alignment.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">NeurIPS 2023</span>
@@ -1096,6 +1114,7 @@
                 <a href="https://arxiv.org/abs/2209.06794" target="_blank" rel="noopener">Pali: A jointly-scaled multilingual language-image model</a>
               </h4>
               <p class="pub-authors">X Chen, <span class="me">X Wang</span>, S Changpinyo, AJ Piergiovanni, P Padlewski, D Salz, ...</p>
+              <p class="pub-desc">Jointly scales a 4B Vision Transformer (ViT-e) and multilingual language model on 10B image-text pairs across 100+ languages for captioning, VQA, and scene-text understanding.</p>
               
             <div class="pub-meta">
               <span class="venue-badge oral-badge">ICLR 2023 (Oral)</span>
@@ -1128,6 +1147,7 @@
                 <a href="https://arxiv.org/abs/2111.07991" target="_blank" rel="noopener">LiT: Zero-Shot Transfer with Locked-image Text Tuning</a>
               </h4>
               <p class="pub-authors">X Zhai, <span class="me">X Wang</span>, B Mustafa, A Steiner, D Keysers, A Kolesnikov, L Beyer</p>
+              <p class="pub-desc">Freezes a pre-trained image encoder while contrastively training a text tower to read out aligned representations, reaching 85.2% zero-shot ImageNet and 82.5% ObjectNet accuracy.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">CVPR 2022</span>
@@ -1170,6 +1190,7 @@
                 <a href="https://arxiv.org/abs/2504.10281" target="_blank" rel="noopener">Zero-shot Autonomous Microscopy for Scalable and Intelligent Characterization of 2D Materials</a>
               </h4>
               <p class="pub-authors">J Yang, RA Yin, C Jiang, Y Hu, X Zhu, X Hu, S Kumar, <span class="me">X Wang</span>, X Zhai, ...</p>
+              <p class="pub-desc">Integrates vision foundation models, LLMs, and topological analysis for autonomous zero-shot 2D material microscopy, reaching 99.7% human-level monolayer segmentation accuracy.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">ACS Nano 2025</span>
@@ -1202,6 +1223,7 @@
                 <a href="https://arxiv.org/abs/2303.17376" target="_blank" rel="noopener">A study of autoregressive decoders for multi-tasking in computer vision</a>
               </h4>
               <p class="pub-authors">L Beyer, B Wan, G Madan, F Pavetic, A Steiner, A Kolesnikov, AS Pinto, ...</p>
+              <p class="pub-desc">Systematically studies autoregressive Transformer decoders for multi-task vision (VQA, captioning, OCR, classification) and introduces LiT-decoder atop frozen vision backbones.</p>
               
             <div class="pub-meta">
               
@@ -1234,6 +1256,7 @@
                 <a href="https://arxiv.org/abs/2302.05442" target="_blank" rel="noopener">Scaling vision transformers to 22 billion parameters</a>
               </h4>
               <p class="pub-authors">M Dehghani, J Djolonga, B Mustafa, P Padlewski, J Heek, J Gilmer, ...</p>
+              <p class="pub-desc">Presents an architectural and parallelization recipe with QK-LayerNorm for stable training of a 22B Vision Transformer, demonstrating LLM-like scaling in accuracy and robustness.</p>
               
             <div class="pub-meta">
               <span class="venue-badge oral-badge">ICML 2023 (Oral)</span>
@@ -1266,6 +1289,7 @@
                 <a href="https://arxiv.org/abs/2205.06230" target="_blank" rel="noopener">Simple Open-Vocabulary Object Detection with Vision Transformers</a>
               </h4>
               <p class="pub-authors">M Minderer, A Gritsenko, A Stone, M Neumann, D Weissenborn, ...</p>
+              <p class="pub-desc">Introduces OWL-ViT, transferring contrastively pre-trained Vision Transformers directly to open-vocabulary detection for strong zero-shot text- and image-conditioned detection.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">ECCV 2022</span>
@@ -1308,6 +1332,7 @@
                 <a href="https://arxiv.org/abs/1912.09713" target="_blank" rel="noopener">Measuring compositional generalization: A comprehensive method on realistic data</a>
               </h4>
               <p class="pub-authors">D Keysers, N Schärli, N Scales, H Buisman, D Furrer, S Kashubin, ...</p>
+              <p class="pub-desc">Introduces Distribution-Based Compositionality Assessment (DBCA) and the CFQ benchmark by maximizing compound divergence while keeping atom distributions matched across splits.</p>
               
             <div class="pub-meta">
               <span class="venue-badge">ICLR 2020</span>
@@ -1364,10 +1389,12 @@
         entries.forEach(entry => {
           const title = entry.getAttribute('data-title') || '';
           const authors = entry.getAttribute('data-authors') || '';
+          const descEl = entry.querySelector('.pub-desc');
+          const desc = descEl ? descEl.textContent.toLowerCase() : '';
           const isCore = entry.getAttribute('data-core') === 'true';
 
           const matchesCore = (activeCategory !== 'core' || isCore);
-          const matchesQuery = (query === '' || title.includes(query) || authors.includes(query));
+          const matchesQuery = (query === '' || title.includes(query) || authors.includes(query) || desc.includes(query));
 
           if (matchesCore && matchesQuery) {
             entry.style.display = 'grid';
